@@ -1,71 +1,69 @@
 🚀 QuizMaster Pro
 📚 Object-Oriented Programming in Java Project
 
-An interactive Quiz Management System built using Java (OOP concepts) with a modern web-based frontend.
+An interactive Quiz Management System built using Java (OOP concepts) with a modern and responsive web-based interface.
 
 ✨ Features
 📝 Create custom quizzes with multiple questions
-🎯 Take quizzes interactively with instant scoring
-👀 View quiz details including correct answers
+🎯 Attempt quizzes with real-time scoring
+👀 View quiz details with correct answers
 📋 List all available quizzes
 💻 Dual Interface:
-CLI-based Java backend
-Interactive Web UI (HTML, CSS, JavaScript)
-🧠 OOP Concepts Used
-✅ Encapsulation
-✅ Abstraction
-✅ Classes & Objects
-✅ Collections (HashMap, ArrayList)
-✅ Modular Design
+Command Line Interface (Java)
+Web-based UI (HTML, CSS, JavaScript)
+
+🧠 OOP Concepts Implemented
+Encapsulation
+Abstraction
+Classes & Objects
+Use of Collections (HashMap, ArrayList)
+Modular Programming
+
 🛠️ Tech Stack
-Technology	Usage
-Java	Backend Logic
-HTML	Structure
-CSS	Styling (Modern UI with gradients & glass effect)
-JavaScript	Frontend Logic & Interactivity
+Java – Backend Logic
+HTML – Structure
+CSS – Styling (Glassmorphism UI)
+JavaScript – Interactivity
+
 📂 Project Structure
-📦 QuizMaster-Pro
- ┣ 📜 index.html        # Frontend UI
- ┣ 📜 style.css         # Styling
- ┣ 📜 script.js         # Frontend Logic
- ┣ 📜 QuizGame.java     # Java Backend (OOP Implementation)
-🎮 How It Works
-🔹 Backend (Java - CLI)
-Run the Java file
+QuizMaster-Pro/
+│── index.html        # Frontend UI
+│── style.css         # Styling
+│── script.js         # Frontend Logic
+│── QuizGame.java     # Java Backend
 
-Use commands:
+🎮 How to Use
+🔹 Run Java Backend (CLI)
+javac QuizGame.java
+java QuizGame
 
-create → Create a new quiz  
-take   → Attempt a quiz  
-view   → View quiz details  
-list   → Show all quizzes  
+Commands:
+create → Create a quiz  
+take   → Attempt quiz  
+view   → View quiz  
+list   → List quizzes  
 exit   → Exit program  
-🔹 Frontend (Web UI)
-Open index.html in browser
-Navigate through:
+
+🔹 Run Web Interface
+Open index.html in any browser
+Use the dashboard to:
 Create Quiz
 Take Quiz
 View Quiz
 List Quizzes
-📸 UI Preview
 
-Modern dashboard with glassmorphism design, smooth animations, and responsive layout.
+📸 UI Highlights
+Modern glassmorphism design
+Smooth animations and transitions
+Fully responsive layout
+Clean and intuitive user experience
 
-🚀 Getting Started
-🔧 Run Java Backend
-javac QuizGame.java
-java QuizGame
-🌐 Run Frontend
+🚀 Future Enhancements
+User authentication system
+Database integration (MySQL / MongoDB)
+Full-stack deployment
+Leaderboard and analytics
 
-Just open:
-
-index.html
-📈 Future Enhancements
-🔐 User authentication system
-💾 Database integration (MySQL / MongoDB)
-🌍 Deploy as full-stack web app
-📊 Leaderboard & analytics
 👨‍💻 Author
-
 Sanidhya Singh Sisodiya
-🎓 Second Year Computer Engineering Student
+Second year Computer Engineering Student
