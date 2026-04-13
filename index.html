@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizMaster Pro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="bg-blur bg1"></div>
+  <div class="bg-blur bg2"></div>
+  <div class="bg-blur bg3"></div>
+
+  <header class="hero">
+    <div class="hero-text">
+      <h1>QuizMaster Pro</h1>
+    </div>
+    <div class="hero-badge">OOPJ Project</div>
+  </header>
+
+  <main class="container">
+
+    <section class="dashboard">
+      <div class="card stat-card">
+        <h3>Total Quizzes</h3>
+        <p id="quizCount">0</p>
+      </div>
+      <div class="card stat-card">
+        <h3>System Status</h3>
+        <p>Active</p>
+      </div>
+      <div class="card stat-card">
+        <h3>Mode</h3>
+        <p>Interactive</p>
+      </div>
+    </section>
+
+    <section class="nav-buttons">
+      <button onclick="showSection('createSection')">Create Quiz</button>
+      <button onclick="showSection('takeSection')">Take Quiz</button>
+      <button onclick="showSection('viewSection')">View Quiz</button>
+      <button onclick="showSection('listSection')">List Quizzes</button>
+    </section>
+
+    <!-- CREATE QUIZ -->
+    <section id="createSection" class="card section active">
+      <h2>Create Quiz</h2>
+      <div class="form-group">
+        <label>Quiz Name</label>
+        <input type="text" id="quizName" placeholder="Enter quiz name">
+      </div>
+
+      <div class="form-group">
+        <label>Question</label>
+        <input type="text" id="questionText" placeholder="Enter question">
+      </div>
+
+      <div class="form-group">
+        <label>Choice 1</label>
+        <input type="text" id="choice1" placeholder="Enter first choice">
+      </div>
+
+      <div class="form-group">
+        <label>Choice 2</label>
+        <input type="text" id="choice2" placeholder="Enter second choice">
+      </div>
+
+      <div class="form-group">
+        <label>Choice 3</label>
+        <input type="text" id="choice3" placeholder="Enter third choice">
+      </div>
+
+      <div class="form-group">
+        <label>Choice 4</label>
+        <input type="text" id="choice4" placeholder="Enter fourth choice">
+      </div>
+
+      <div class="form-group">
+        <label>Correct Option Number</label>
+        <input type="number" id="correctChoice" min="1" max="4" placeholder="Enter correct option (1-4)">
+      </div>
+
+      <div class="button-group">
+        <button class="primary" onclick="addQuestion()">Add Question</button>
+        <button class="success" onclick="saveQuiz()">Save Quiz</button>
+      </div>
+
+      <div id="questionPreview" class="preview-box"></div>
+    </section>
+
+    <!-- TAKE QUIZ -->
+    <section id="takeSection" class="card section">
+      <h2>Take Quiz</h2>
+      <div class="form-group">
+        <label>Select Quiz</label>
+        <select id="takeQuizSelect"></select>
+      </div>
+      <button class="primary" onclick="startQuiz()">Start Quiz</button>
+      <div id="quizArea" class="quiz-area"></div>
+    </section>
+
+    <!-- VIEW QUIZ -->
+    <section id="viewSection" class="card section">
+      <h2>View Quiz</h2>
+      <div class="form-group">
+        <label>Select Quiz</label>
+        <select id="viewQuizSelect"></select>
+      </div>
+      <button class="primary" onclick="viewQuiz()">View Details</button>
+      <div id="viewQuizArea" class="preview-box"></div>
+    </section>
+
+    <!-- LIST QUIZZES -->
+    <section id="listSection" class="card section">
+      <h2>Available Quizzes</h2>
+      <ul id="quizList" class="quiz-list"></ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>QuizMaster Pro</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
